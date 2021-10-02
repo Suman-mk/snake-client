@@ -1,3 +1,4 @@
+/*
 const net = require("net");
 
 // establishes a connection with the game server
@@ -15,3 +16,17 @@ const connect = function () {
 
 console.log("Connecting ...");
 connect();
+*/
+
+//
+// jshint esversion : 6
+const { log } = require('./logger');
+const { connect } = require('./client');
+const { setupInput } = require('./input');
+
+
+
+
+log('Connecting ...');
+const tcpConnection = connect();
+setupInput(tcpConnection);
