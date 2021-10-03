@@ -34,3 +34,14 @@ Moves the snake down one block, (unless facing up) Move: left
 Moves the snake left one block, (unless facing right) Move: right
 Moves the snake right one block, (unless facing left) Say: {hi there}
 Short chat message to be displayed on the screen; in this case {hi there}.
+
+Handles all the logic related to setting up input stream and handling user input.
+
+Key	Command
+W , w , '8'	  sends move up command
+A , a , '4'	  sends move left command
+S , s , '2'	  sends move down command
+D , d , '6'	  sends move right command
+H, h	        sends canned message 'Hi there'
+B, b	        sends canned message 'Bye ppl'
+G, g	        sends canned message 'Got to go'
