@@ -28,7 +28,7 @@ Supported commands by Snek-Multiplayer server
 Commands are passed by as utf8 strings between client and server. Name: SM
 
 Sets the name for snake; in this case SM is the desired name name.
-Recommended max name of 3-character long. Move: up
+ Move: up
 Moves the snake up one block, (unless facing down) Move: down
 Moves the snake down one block, (unless facing up) Move: left
 Moves the snake left one block, (unless facing right) Move: right
