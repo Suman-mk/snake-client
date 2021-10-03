@@ -9,14 +9,14 @@ const client = {                          //establish connection with the game s
   connect: function() {
     const conn = net.createConnection({
       host: IP,
-      port: PORT
+      port: port
     });
 
     conn.setEncoding('utf8');             //incoming data to text
 
     conn.on('connect',()=>{                //connect event
       log('Connected to server...');
-      conn.write('Name: SNK');
+      conn.write('Name: SM');
     });
 
     conn.on('data', (data) => {             //data event

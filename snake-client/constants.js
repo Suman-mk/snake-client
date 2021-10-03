@@ -1,9 +1,6 @@
-/*
-  Contains constants and configaration info
-*/
-// jshint esversion : 6
+
 
 module.exports = {
-  IP: 'localhost',
+  IP: '192.168.2.27',
   PORT: 50541
 };
