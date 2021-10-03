@@ -1,34 +1,25 @@
-/*  Establishes connection to the server- assumes `localhost`.
-//  Prints `Connected to server...` upon successful connection.
-//  Sets the snake-name to `SNK` upon successful connection.
-//  Logs server responses to screen.
-*/
-// jshint esversion : 6
+
+// jEs6 convert
 const net = require('net');
 const { log } = require('./logger');
 const { IP, PORT } = require('./constants');
 
-/**
- * Establishes connection with the game server
- */
-const client = {
+
+const client = {                          //establish connection with the game server
   connect: function() {
     const conn = net.createConnection({
       host: IP,
       port: PORT
     });
 
-    /* interpret incoming data as text */
-    conn.setEncoding('utf8');
+    conn.setEncoding('utf8');             //incoming data to text
 
-    /* CONNECT event */
-    conn.on('connect',()=>{
+    conn.on('connect',()=>{                //connect event
       log('Connected to server...');
       conn.write('Name: SNK');
     });
 
-    /* DATA event */
-    conn.on('data', (data) => {
+    conn.on('data', (data) => {             //data event
       log(`Server says: ${data}`);
     });
     
