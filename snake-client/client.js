@@ -9,7 +9,7 @@ const client = {                          //establish connection with the game s
   connect: function() {
     const conn = net.createConnection({
       host: IP,
-      port: port
+      port: PORT
     });
 
     conn.setEncoding('utf8');             //incoming data to text

@@ -1,5 +1,5 @@
 
-const net = require("net");
+/*const net = require("net");
 
 // establishes a connection with the game server
 const connect = function () {
@@ -7,14 +7,11 @@ const connect = function () {
     host: host,
     port: port
   });
-
+*/
   /**
  * Setup User Interface 
  * Specifically, so that we can handle user input via stdin
  */
-
-console.log("Connecting ...");
-connect();
 
 
 //
@@ -23,7 +20,8 @@ const { log } = require('./logger');
 const { connect } = require('./client');
 const { setupInput } = require('./input');
 
-
+console.log("Connecting ...");
+connect();
 
 
 log('Connecting ...');
