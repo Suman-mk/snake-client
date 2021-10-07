@@ -27,7 +27,8 @@ const setupInput = (conn) => {
 const handleInput = (key) => {
   if (key === '\u0003') {
     process.exit();
-  } else {
+  } 
+  else {
     if (key === moveUp){
       conn.write("Move: up");
     }
@@ -45,7 +46,7 @@ const handleInput = (key) => {
     }
   }
 
-};
+}
 
 
 module.exports = {setupInput};
