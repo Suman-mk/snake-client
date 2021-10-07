@@ -10,21 +10,18 @@ let tcpConnection;
 
 const setupInput = (conn) => {
     tcpConnection = conn;
-
     const stdin = process.stdin;
     stdin.setRawMode(true);
-    //stdin.setEncoding('utf8');  
+    stdin.setEncoding('utf8');
     stdin.resume();
-    let previousMoveDirection, moveDirection, moveCommand;
   
     stdin.on('data', (data) => {
       /* ctrl + c ====> EXIT application */
-      handleInput(data)
+      handleInput(data);
 
-    }
-    );
+    });
   return stdin;
-};
+}
 
 
 const handleInput = (key) => {
@@ -46,9 +43,9 @@ const handleInput = (key) => {
     if (key === moveRight){
       conn.write('Move: right');
     }
+  }
 
-}
+};
 
-}
 
 module.exports = {setupInput};

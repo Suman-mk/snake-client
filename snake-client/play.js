@@ -1,17 +1,4 @@
 
-/*const net = require("net");
-
-// establishes a connection with the game server
-const connect = function () {
-  const conn = net.createConnection({
-    host: host,
-    port: port
-  });
-*/
-  /**
- * Setup User Interface 
- * Specifically, so that we can handle user input via stdin
- */
 
 
 //
